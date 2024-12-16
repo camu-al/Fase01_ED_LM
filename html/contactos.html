@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../css/contactosStyle.css" />
+  </head>
+  <body>
+    <h1>Universo del Manga</h1>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="generos.html">Géneros</a></li>
+              <li><a href="contactos.html">Contacto</a></li>
+              <li><a href="videos.html">Vídeos</a></li>
+          </ul>
+      </nav>
+  </header>
+    <h3>¡Únete a nuestra comunidad manga!</h3>
+    
+    <form action="http://192.168.56.1/Universodelmanga/contactos.php" method="post">
+
+      <label for="nombre">Nombre de usuario:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <br><br>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+      <br><br>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="13" max="100" />
+      <br><br>
+
+      <label>¿Te gusta leer manga?</label>
+      <input type="radio" name="manga" value="si" /> Sí
+      <input type="radio" name="manga" value="no" /> No
+      <br><br>
+
+      <label for="mangaFavorito">¿Cuál es tu manga favorito?</label>
+      <input type="text" id="mangaFavorito" name="mangaFavorito">
+      <br><br>
+      
+      <label>¿Cuáles son tus géneros favoritos?</label>
+      <br><br>      
+      <select name="generos" multiple>
+        <option value="shonen">Shonen</option>
+        <option value="shojo">Shojo</option>
+        <option value="seinen">Seinen</option>
+        <option value="josei">Josei</option>
+        <option value="otros">Otros</option>
+      </select>
+
+      <br><br>
+      <label for="mensaje">Mensaje:</label>
+      <br>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+      <br><br />
+
+      <input type="submit" value="Enviar" />
+      <br><br>
+    </form>
+    <a href="./index.html">Volver al inicio</a>
+
+    <footer>
+        <p>Universo del Manga. Universodelmanga@gmail.com</p>
+    </footer>
+  </body>
+</html>
